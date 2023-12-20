@@ -1,10 +1,13 @@
 
 # Code Explainer CLI Application
-This is a cli application that can be used to fetch code of the active file and provide its detailed English explanation.
+This is a CLI application that can be used to fetch the code of the active file and provide its detailed English explanation.
 
-It uses Open API for providing the explanation.
+It uses Open API to provide the explanation.
 
 I have provided the .env file as well with the `OPEN_API_KEY` for easy evaluation of my project.
+
+## Extra features added
+- Analyse the code for any errors.
 
 ## Tech-Stack used
 Node.js
@@ -13,6 +16,8 @@ Node.js
 `-h` or `--help`: to show help 
 
 `--version`: to show version number
+
+`--er`: to find any error in the code
 
 ## Setup
 1. Clone the Repository 
@@ -61,8 +66,12 @@ Node.js
    ```
 
 ## Screenshots:
+Code explanation:
 
 ![Screenshot_20231220_223340](https://github.com/t4nm4y/code-explainer/assets/88146479/5207d14e-34de-4b32-a066-ae89a6c30763)
+
+Finding errors:
+![Screenshot_20231220_233844](https://github.com/t4nm4y/code-explainer/assets/88146479/b7f0b5ed-8db0-4043-8efd-64ae844ef25b)
 
 
 
