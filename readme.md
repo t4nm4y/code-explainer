@@ -6,6 +6,8 @@ It uses Open API to provide the explanation.
 
 I have provided the .env file as well with the `OPEN_API_KEY` for easy evaluation of my project.
 
+The summary report is also present in this repo.
+
 ## Extra features added
 - Analyse the code for any errors.
 
