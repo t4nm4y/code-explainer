@@ -73,7 +73,7 @@ async function CheckErrors() {
       },
       {
         role: "user",
-        content: `Is there any error in the following code. If there is no error simply reply "No error found!". \n\n${code}`,
+        content: `Is there any error in the following code: \n\n${code}`,
       },
     ],
     model: "gpt-3.5-turbo",
