@@ -55,6 +55,10 @@ Node.js
     ```bash
     cex path-of-the-code-file
     ```
+6. To Uninstall the CLI run:
+   ```bash
+   npm uninstall -g code-explainer
+   ```
 
 ## Screenshots:
 
