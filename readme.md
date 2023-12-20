@@ -4,7 +4,7 @@ This is a CLI application that can be used to fetch the code of the active file 
 
 It uses Open API to provide the explanation.
 
-I have provided the .env file as well with the `OPEN_API_KEY` for easy evaluation of my project.
+I have provided the .env file as well with the `OPENAI_API_KEY` for easy evaluation of my project.
 
 The summary report is also present in this repo.
 
