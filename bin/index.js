@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 const yargs = require('yargs');
 const OpenAI = require('openai');
-require('isomorphic-fetch');
 
 // Load environment variables from .env file
 require('dotenv').config({ path: path.join(__dirname, '../.env') });
@@ -36,11 +35,11 @@ if (!apiKey) {
 }
 const openai = new OpenAI({ apiKey });
 
-async function explain() {
+async function Explain() {
   const code = fs.readFileSync(filePath, 'utf8');
-      // console.log('Code from the file:');
-      // console.log(code);
-      console.log("The explanation of the code is being loaded...\n")
+  // console.log('Code from the file:');
+  // console.log(code);
+  console.log("The explanation of the code is being loaded...\n")
   const completion = await openai.chat.completions.create({
     messages: [
       {
@@ -49,7 +48,7 @@ async function explain() {
       },
       {
         role: "user",
-        content: `Explain the following code:\n\n${code}`,
+        content: `Explain the following code with a summary of what the code does:\n\n${code}`,
       },
     ],
     model: "gpt-3.5-turbo",
@@ -57,14 +56,13 @@ async function explain() {
 
   console.log(completion.choices[0].message.content);
   console.log("\n")
-
 }
 
 async function CheckErrors() {
   const code = fs.readFileSync(filePath, 'utf8');
-      // console.log('Code from the file:');
-      // console.log(code);
-      console.log("Analysing the code to find errors...\n")
+  // console.log('Code from the file:');
+  // console.log(code);
+  console.log("Analysing the code to find errors...\n")
   const completion = await openai.chat.completions.create({
     messages: [
       {
@@ -73,21 +71,20 @@ async function CheckErrors() {
       },
       {
         role: "user",
-        content: `Is there any error in the following code: \n\n${code}`,
+        content: `Is there any error in the following code: \n\n${code} \n Also tell where are the errors and give solutions or correct syntax for the same.`,
       },
     ],
     model: "gpt-3.5-turbo",
   });
-
   console.log(completion.choices[0].message.content);
   console.log("\n")
 }
 
-if(argv.er){
+if (argv.er) {
   CheckErrors();
 }
-else{
-  explain();
+else {
+  Explain();
 }
 
 
