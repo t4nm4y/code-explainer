@@ -22,11 +22,16 @@ Node.js
 2. Install Dependencies
    ```bash
    cd code-explainer
+   npm install
    npm install -g
    ```
-   -g is used to install it globally on your system.
+   You have to run both these commands:
+   
+   npm install: to install all the required packages.
+   
+   npm install -g: to install the CLI globally on your system.
 
-3. Set Up OpenAI API Key:
+4. Set Up OpenAI API Key:
    
    I have already provided it in the .env file.
    
@@ -34,7 +39,7 @@ Node.js
 
     OPENAI_API_KEY=your_key
 
-4. Run the CLI:
+5. Run the CLI:
    
    Go to  directory of your code and run:
    ```bash
