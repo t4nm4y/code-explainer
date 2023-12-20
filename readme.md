@@ -47,6 +47,8 @@ Node.js
 
 ## Screenshots:
 
+![Screenshot_20231220_223340](https://github.com/t4nm4y/code-explainer/assets/88146479/5207d14e-34de-4b32-a066-ae89a6c30763)
+
 
 
 ### Made with ❤️ by Tanmay Kumar.
