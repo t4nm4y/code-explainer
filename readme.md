@@ -17,7 +17,7 @@ Node.js
 ## Setup
 1. Clone the Repository 
    ```bash
-   https://github.com/t4nm4y/code-explainer
+   git clone https://github.com/t4nm4y/code-explainer
    ```
 2. Install Dependencies
    ```bash
