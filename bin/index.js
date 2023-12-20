@@ -10,10 +10,13 @@ require('isomorphic-fetch');
 require('dotenv').config({ path: path.join(__dirname, '../.env') });
 
 const argv = yargs
-  .usage('Usage: cex [options] <file-name>')
+  .usage('Usage: cex <file-name> [options]')
   .option('help', {
     alias: 'h',
     description: 'Show help',
+  })
+  .option('er', {
+    description: 'Check for errors in the code',
   })
   .demandCommand(1, 'Please provide a file name or the file path.')
   .argv;
@@ -32,11 +35,12 @@ if (!apiKey) {
   process.exit(1);
 }
 const openai = new OpenAI({ apiKey });
-async function main() {
+
+async function explain() {
   const code = fs.readFileSync(filePath, 'utf8');
       // console.log('Code from the file:');
       // console.log(code);
-      console.log("The explaination of the code is being loaded...\n")
+      console.log("The explanation of the code is being loaded...\n")
   const completion = await openai.chat.completions.create({
     messages: [
       {
@@ -52,6 +56,38 @@ async function main() {
   });
 
   console.log(completion.choices[0].message.content);
+  console.log("\n")
+
 }
 
-main();
+async function CheckErrors() {
+  const code = fs.readFileSync(filePath, 'utf8');
+      // console.log('Code from the file:');
+      // console.log(code);
+      console.log("Analysing the code to find errors...\n")
+  const completion = await openai.chat.completions.create({
+    messages: [
+      {
+        role: "system",
+        content: "You are an experienced software developer.",
+      },
+      {
+        role: "user",
+        content: `Is there any error in the following code. If there is no error simply reply "No error found!". \n\n${code}`,
+      },
+    ],
+    model: "gpt-3.5-turbo",
+  });
+
+  console.log(completion.choices[0].message.content);
+  console.log("\n")
+}
+
+if(argv.er){
+  CheckErrors();
+}
+else{
+  explain();
+}
+
+
