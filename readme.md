@@ -31,6 +31,12 @@ Node.js
    
    npm install -g: to install the CLI globally on your system.
 
+   Run this command to check if the CLI is properly installed on your system.
+   ```bash
+   cex --version
+   ```
+   It should display the version no. eg: 1.0.0. if it's correctly installed.
+
 4. Set Up OpenAI API Key:
    
    I have already provided it in the .env file.
