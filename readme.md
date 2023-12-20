@@ -75,7 +75,15 @@ https://github.com/t4nm4y/code-explainer/assets/88146479/5dd197c9-3208-4feb-8b5f
 ## Screenshots:
 Code explanation:
 
+of a normal DSA coding ques:
 ![Screenshot_20231220_223340](https://github.com/t4nm4y/code-explainer/assets/88146479/5207d14e-34de-4b32-a066-ae89a6c30763)
+
+of this project:
+![Screenshot_20231221_012218](https://github.com/t4nm4y/code-explainer/assets/88146479/731798b3-c331-4a0a-a988-0dd306778f04)
+
+of a development code:
+![Screenshot_20231221_012359](https://github.com/t4nm4y/code-explainer/assets/88146479/bdfcbf94-e443-4f93-8c72-68d39344e6be)
+
 
 Finding errors:
 ![Screenshot_20231220_233844](https://github.com/t4nm4y/code-explainer/assets/88146479/b7f0b5ed-8db0-4043-8efd-64ae844ef25b)
