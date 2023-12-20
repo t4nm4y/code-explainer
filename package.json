@@ -1,0 +1,22 @@
+{
+  "name": "code-explainer",
+  "version": "1.0.0",
+  "description": "A CLI to explain the code present in the active file",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "bin": {
+    "cex": "./bin/index.js"
+  },
+  "author": "Tanmay Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "g": "^2.0.1",
+    "yargs": "^17.7.2"
+  }
+}
