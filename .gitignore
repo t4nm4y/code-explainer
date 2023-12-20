@@ -10,7 +10,7 @@ build/
 dist/
 
 # Environment files
-.env
+# .env
 
 # dependencies
 /.pnp
