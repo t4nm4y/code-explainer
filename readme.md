@@ -64,6 +64,11 @@ Node.js
    ```bash
    npm uninstall -g code-explainer
    ```
+## Demo Video:
+
+https://github.com/t4nm4y/code-explainer/assets/88146479/5dd197c9-3208-4feb-8b5f-894fbfd352b3
+
+
 
 ## Screenshots:
 Code explanation:
