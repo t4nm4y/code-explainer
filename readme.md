@@ -12,7 +12,7 @@ The summary report is also present in this repo.
 - Analyse the code for any errors.
 
 ## Tech-Stack used
-Node.js
+Node.js, Open AI API
 
 ## CLI options
 `-h` or `--help`: to show help 
